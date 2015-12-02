@@ -28,6 +28,7 @@
 		7DE627841C0E82D100723443 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627801C0E82D100723443 /* MBProgressHUD+NJ.m */; };
 		7DE627851C0E82D100723443 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DE627811C0E82D100723443 /* MBProgressHUD.bundle */; };
 		7DE627861C0E82D100723443 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627831C0E82D100723443 /* MBProgressHUD.m */; };
+		7DF2CF0B1C0ECBBF004A8978 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		7DE627811C0E82D100723443 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		7DE627821C0E82D100723443 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7DE627831C0E82D100723443 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7DF2CF091C0ECBBF004A8978 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,8 +232,18 @@
 		7DE6278B1C0EBA3900723443 /* demo1 */ = {
 			isa = PBXGroup;
 			children = (
+				7DF2CF081C0ECB94004A8978 /* Controller */,
 			);
 			name = demo1;
+			sourceTree = "<group>";
+		};
+		7DF2CF081C0ECB94004A8978 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DF2CF091C0ECBBF004A8978 /* Demo1ViewController.h */,
+				7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,7 @@
 				7DE591971C0D2D9200BA1CAF /* ASIHTTPRequest.m in Sources */,
 				7DE591921C0D2D9200BA1CAF /* ASIAuthenticationDialog.m in Sources */,
 				7DE591C01C0D344300BA1CAF /* ASIWebPageRequest.m in Sources */,
+				7DF2CF0B1C0ECBBF004A8978 /* Demo1ViewController.m in Sources */,
 				7DE591961C0D2D9200BA1CAF /* ASIFormDataRequest.m in Sources */,
 				7DE5912A1C0D2D4100BA1CAF /* AppDelegate.m in Sources */,
 				7DE627861C0E82D100723443 /* MBProgressHUD.m in Sources */,
