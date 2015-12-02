@@ -8,6 +8,73 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="dzD-OE-wHF">
+            <objects>
+                <viewController id="x4O-AA-Pbq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Wd-HR-reX"/>
+                        <viewControllerLayoutGuide type="bottom" id="esa-d4-FD2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXV-YW-CPW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7u-Wy-mJI">
+                                <rect key="frame" x="48" y="114" width="224" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hMx-yP-ou1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="文字配置信息的缓存"/>
+                                <connections>
+                                    <segue destination="ZvH-iN-RiJ" kind="modal" id="g7N-LQ-aB7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-Ig-X04">
+                                <rect key="frame" x="48" y="237" width="224" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mzd-ti-Qh6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="H5页面缓存"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="msf-PY-OCF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsl-TZ-POR">
+                                <rect key="frame" x="48" y="371" width="224" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tYR-g6-TiT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="H5页面触发Native方法"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nsl-TZ-POR" firstAttribute="leading" secondItem="AXV-YW-CPW" secondAttribute="leadingMargin" constant="28" id="8BI-Wv-byf"/>
+                            <constraint firstItem="b7u-Wy-mJI" firstAttribute="leading" secondItem="AXV-YW-CPW" secondAttribute="leadingMargin" constant="28" id="9Wq-PQ-Thv"/>
+                            <constraint firstItem="Vhc-Ig-X04" firstAttribute="leading" secondItem="AXV-YW-CPW" secondAttribute="leadingMargin" constant="28" id="NI1-UP-WKu"/>
+                            <constraint firstItem="b7u-Wy-mJI" firstAttribute="top" secondItem="0Wd-HR-reX" secondAttribute="bottom" constant="94" id="RRz-ve-Rdr"/>
+                            <constraint firstItem="Nsl-TZ-POR" firstAttribute="top" secondItem="Vhc-Ig-X04" secondAttribute="bottom" constant="104" id="SRj-2F-ZrI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b7u-Wy-mJI" secondAttribute="trailing" constant="28" id="n0n-kM-ZnN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vhc-Ig-X04" secondAttribute="trailing" constant="28" id="q0d-ei-LQF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nsl-TZ-POR" secondAttribute="trailing" constant="28" id="xdK-Rl-ARL"/>
+                            <constraint firstItem="Vhc-Ig-X04" firstAttribute="top" secondItem="b7u-Wy-mJI" secondAttribute="bottom" constant="93" id="ybv-8k-1r3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aVv-6D-Gx4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IY-DX-YzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="101"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -19,7 +86,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-UV-bGf">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-UV-bGf">
                                 <rect key="frame" x="-4" y="106" width="328" height="374"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
@@ -27,7 +94,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="5ir-uq-0tM"/>
                                 </connections>
                             </webView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42m-9l-Xo1" userLabel="导航条">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42m-9l-Xo1" userLabel="导航条">
                                 <rect key="frame" x="-4" y="20" width="328" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前网络环境" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzR-W2-uK0">
@@ -72,7 +139,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-VA-oCL" userLabel="选择网页">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-VA-oCL" userLabel="选择网页">
                                 <rect key="frame" x="-8" y="65" width="336" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSm-wP-zNf">
@@ -197,6 +264,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="CB1-Z6-XbT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="currentNetworkLabel" destination="LzR-W2-uK0" id="vc0-Of-SWN"/>
@@ -205,7 +273,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211" y="445"/>
+            <point key="canvasLocation" x="235" y="101"/>
+        </scene>
+        <!--Demo1 View Controller-->
+        <scene sceneID="rpX-tA-Qfy">
+            <objects>
+                <viewController id="ZvH-iN-RiJ" customClass="Demo1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qji-dH-Lyv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uxb-vv-thi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Qk-br-K0y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-HC-B9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="-420"/>
         </scene>
     </scenes>
 </document>
