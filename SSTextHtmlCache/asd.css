@@ -1,0 +1,166 @@
+@charset "utf-8";
+/*reset*/
+body,button,input,select,textarea{font:100%/1 STHeitiSC,"Helvetica Neue",Helvetica,STHeiTi,"Microsoft YaHei";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,article,aside,footer,header,hgroup,nav,section,menu{margin:0; padding:0;-webkit-text-size-adjust:100%;font-size: 100%;}
+em,i{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+img{border:0;}
+input,img{vertical-align:middle;outline-style: none;}
+article,aside,footer,header,hgroup,nav,section,menu{display:block;}
+a{text-decoration:none;}
+a,input{-webkit-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);outline:none;}
+html,body{height: 100%;}
+/*common*/
+.m_txtF{color:#ff0000;}
+.mobileSina .icon{display: inline-block;background: url(/images/signin/icon.png) no-repeat;background-size: 4.6875em;vertical-align: middle;}
+/*澶撮儴*/
+.mobileSina .login_header{text-align: center;position: relative;padding: .8125rem .8125rem 0;}
+.mobileSina .btn_back{width: 2.75em;height: 2.75em;position: absolute;left: 0;top: .2625em;text-align: left;}
+.mobileSina .ico_back{width: .8125em;height: 1.3125em;margin: .8em 0 0 .8125em;}
+.mobileSina .logo_ico{display: inline-block;width: 7.3125em;height: 2.1875em;text-indent: -9999em;background: url(/images/signin/logo_sina.png) no-repeat;background-size: 6.96875em;}
+.mobileSina .prompt{line-height: 1.066em;padding-top: 1.3rem;font-weight: normal;}
+.mobileSina .login_main{padding: .8rem 1.875rem 2.875rem;}
+/*琛ㄥ崟*/
+.mobileSina .info{overflow:hidden;}
+.mobileSina .info li{border-bottom: 1px solid #bdd5ee;height: 2.78em;}
+.mobileSina .info input{width: 100%;height: 100%;border:none;background-color:transparent;padding-left: .315rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.mobileSina .info ::-webkit-input-placeholder{color:#979797;}
+.mobileSina .info input:-moz-placeholder{color:#979797;}
+.mobileSina .photo_main{display: block;}
+/*寰崥鐧婚檰*/
+.mobileSina .photo_main{/*position: relative;*/height: 7.75em;text-align: center;}
+/*.mobileSina .photo_cur{position: absolute;left: 50%;top: 0;margin-left: -2.65625em;min-width: 12em;}*/
+/*.mobileSina .photo_cur dl{text-align: center;display: inline-block;}*/
+/*.mobileSina .photo_cur .user_name{font-size: .875em;padding-top: .56875em;}*/
+/*.mobileSina .account_user{margin-right: .625em;}*/
+.mobileSina .photo_cur .user_photo{margin: 0 auto .5rem;width: 5.3125em;height: 5.3125em;overflow: hidden;border-radius: 5.3125em;}
+.mobileSina .photo_cur .user_photo img{width: 100%;}
+/*.mobileSina .account_swit dt{width: 5.3125em;height: 5.3125em;line-height: 5.3125em;}
+.mobileSina .account_swit .add{display: inline-block;width: .9375em;height: .9375em;text-align: center;line-height: .9375em;font-size: 3em;background: rgba(243,243,243,.8);color: rgba(58,140,255,.5);font-family: SimSum;vertical-align: middle;border-radius: .9375em;}*/
+.login_weibo .photo_main{display: block;}
+.login_weibo .account{display: none;}
+.login_weibo .login_main{padding-bottom: 2.2rem;}
+.login_weibo .login_main .btn_login{margin-top: 1.3125rem;}
+.login_weibo .login_main .btn_weibo{display: none;}
+/*楠岃瘉鐮�*/
+.mobileSina .shield{position: relative;}
+.mobileSina .verify{padding-right: 6.9rem;}
+.mobileSina .verify img{display: block;position: absolute;right: .43em;top: .125em;cursor: pointer;}
+/*鎵嬫満楠岃瘉鐮�*/
+.mobileSina .shield .verify_btn{display: none;}
+.mobileSina .shield .verify_wrap{position: absolute;right: .5em;top: 0;height: 100%;padding: .5em 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.mobileSina .verify_m{padding-right: 8em;}
+.mobileSina .verify_m .verify_btn{display: inline-block;width: 7.5em;height: 2.15em;background: #36a73c;text-align: center;line-height: 2.15em;font-size: .875em;height: 100%;}
+.mobileSina .verify_m a.verify_wait{background: #c7c7c7;}
+
+/*btn*/
+.mobileSina .btn_login{display: inline-block;width: 100%;padding: .855em 0;text-align: center;font-size: 1.25em;background: #3a8ce1;margin-top: 1.54375rem;letter-spacing: .38em;}
+.mobileSina .btn_logining{background: rgba(58,140,225,.6);}
+.mobileSina .bar{overflow: hidden;}
+.mobileSina .bar3rd{overflow: hidden; padding: 1.562em 0; font-size: .875em;}
+.mobileSina .bar3rd a:first-child{ margin-right: 20px;}
+.mobileSina .bar_reg,.mobileSina .bar_fgpw{padding: .1rem 0 .875rem;margin: .42rem 0 .4375rem;font-size: .875em;}
+.mobileSina .bar_reg{float: left;}
+.mobileSina .bar_fgpw{float: right;}
+.mobileSina .btn_weibo{display: inline-block;width: 100%;height: 3.28em;line-height: 3.28em;background: #ffd647;text-align: center;overflow: hidden;}
+.mobileSina .btn_weibo span{float: left;width: 3.28em;height: 100%;background: #ffe27b;text-align: center;}
+.mobileSina .btn_weibo em{font-size: 1.25em;}
+.mobileSina .ico_weibo{width: 2.473em;height: 1.875em;background-position: -1.875em 0;}
+.mobileSina .login_main .link_reg{padding: .805rem 0;text-align: center;font-size: .875em;}
+.mobileSina .bar3rd .icon {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin: 0 10px 0 0;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("/images/weibo/signin/icon.png");
+    -webkit-background-size: 23px auto;
+    background-size: 23px auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .mobileSina .bar3rd .icon {
+        background-image: url("/images/weibo/signin/icon_2x.png");
+    }
+}
+.mobileSina .bar3rd .icon.forQQ {
+    background-position: 0 -62px;
+}
+.mobileSina .bar3rd .icon.forUC {
+    background-position: 0 -85px;
+}
+/*鎹㈣偆*/
+.skin_weibo{background: url(/images/signin/bg.jpg) center fixed no-repeat;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;}
+.skin_weibo .login_header .logo_ico{background-image: url(/images/signin/logo_weibo.png);}
+.skin_weibo .login_header .icon{background-position: -0.9375em 0;}
+/*.skin_weibo .photo_cur .account_swit .add{background: rgba(255,255,255,.1);color: rgba(255,255,255,.2);}*/
+/*.skin_weibo .account_swit .m_txtA{color: rgba(255,255,255,.4);}*/
+.skin_weibo .login_main .info li{border-bottom-color: #ffffff;}
+.skin_weibo .info li ::-webkit-input-placeholder{color: #ffffff;}
+.skin_weibo .info input:-moz-placeholder{color: #ffffff;}
+.skin_weibo .verify_m .verify_btn{background: #ffd647;}
+.skin_weibo .btn_login{background: #ffd647;}
+.skin_weibo .btn_logining{background: rgba(255,227,71,.6);}
+
+/*瀛椾綋棰滆壊*/
+.skin_weibo h2.prompt,
+.skin_weibo .login_main .bar a,
+.skin_weibo p.link_reg a{color: #facd66;}
+.mobileSina .photo_cur .user_name,
+.login_succ .succ_info,
+.login_info .err_txt{color: #000000;}
+.skin_weibo .photo_cur .user_name,
+.skin_weibo .info input,
+.mobileSina .verify_m a.verify_wait,
+.mobileSina .verify_m .verify_btn,
+.mobileSina .btn_login,
+.skin_weibo p.link_reg,
+.mobileSina_err .err_info,
+.mobileSina_err .err_btn .btn_l,
+.mobileSina_err .err_btn .btn_r{color: #ffffff;}
+.skin_weibo .verify_m .verify_btn,
+.skin_weibo .btn_login,
+.mobileSina .btn_weibo{color: #333333;}
+.mobileSina .bar a,
+.mobileSina .link_reg a,
+.mobileSina .bar3rd a,
+.login_succ .succ_main .m_txtB a{color: #2276cd;}
+.mobileSina .prompt,
+.mobileSina .link_reg,
+.login_succ .succ_main .m_txtB{color: #979797;}
+.mobileSina .btn_logining{color: rgba(255,255,255,.6);}
+.skin_weibo .btn_logining{color: rgba(51,51,51,.7);}
+/*鐧婚檰鎴愬姛椤�*/
+.login_succ{text-align: center;}
+.login_succ .succ_ico{width: 9em;height: 9em;background: url(/images/signin/sucIcon.png);background-size:9em;margin: 2.125rem auto;}
+.login_succ .succ_info{font-size: 1.25em;line-height: 1.5em;margin-bottom: .625rem;}
+.login_succ .m_txtB{font-size: .875em;line-height: 1.5em;}
+/*鐧婚檰淇℃伅*/
+.login_info .logo_ico{width: 8em;background-image: url(/images/signin/logo_new.png);background-size:8em;}
+.login_info .err_ico{width: 9.875em;height: 6.8125em;background: url(/images/signin/info_bg.png);background-size:9.875em;margin: 0.4rem auto;}
+.login_info .err_txt{font-size: 1.0625em;line-height: 1.47em;padding: 1rem 0 1.2rem;word-break:break-word;word-wrap:break-all;}
+.login_info .photo_main{display: block;margin-top: .9rem;}
+.login_info .photo_main .user_name{font-size: .875em;}
+.login_info .btn_login{font-size: 1.1875em; background: #f48800;border-radius: 4px;border: 1px solid #e9740d;}
+.login_info .btn_no{background-color: #919191;border: 1px solid #919191;}
+/*閿欒鎻愮ず*/
+.mobileSina_err{position: absolute;width: 9.125em;padding-top: .875rem;background: rgba(0,0,0,.7);text-align: center;z-index: 999;word-break:break-word;word-wrap:break-all;border-radius: .4em;}
+.mobileSina_err .ico_cir{width: 1.875em;height: 1.875em;margin: 0 auto .375rem;border-radius: 1.875em;border: 0.12rem solid #ffffff;}
+.mobileSina_err .ico_cir .ico_alert{display: inline-block;width: .28125em;height: .9375em;margin-top: .21875rem;background: #ffffff;border-radius: .125em .125em .15625em .15625em;}
+.mobileSina_err .ico_cir .ico_point{display: block;margin: .1rem auto 0;width: .28125em;height: .28125em;border-radius: .28125em;background: #ffffff;}
+.mobileSina_err .err_info{line-height: 1.3em;padding: 0 .55rem .61875rem;}
+/*閿欒鎻愮ず 鏈夋寜閽�*/
+.mobileSina_err .err_btn{border-top: 1px solid rgba(255,255,255,.4);overflow: hidden;}
+.mobileSina_err .err_btn .btn_l,
+.mobileSina_err .err_btn .btn_r{height: 1.875em;line-height: 1.875em;margin: .366rem 0;}
+.mobileSina_err .err_btn .btn_l{width: 50%;float: left;border-right: 1px solid rgba(255,255,255,.3);}
+.mobileSina_err .err_btn .btn_r{display: block;overflow: hidden;}
+.btn_err{width: 12.1875em;padding-top: 1.875rem;}
+.btn_err .err_info{padding-bottom: 1.3125rem;}
+/*media*/
+@media screen and (max-width: 319px){
+    body,input,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,form,article,aside,footer,header,hgroup,nav,section,menu{font-size: 82%;}
+}

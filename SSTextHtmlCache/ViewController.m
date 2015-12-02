@@ -29,6 +29,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentNetworkLabel;
 
 - (IBAction)changeVersion:(id)sender;
+
+- (IBAction)back:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -106,7 +109,6 @@
     
     // It is strongly recommended you use a download cache with ASIWebPageRequest
     // When using a cache, external resources are automatically stored in the cache
-    // and can be pulled from the cache on subsequent page loads
     [self.request setDownloadCache:[ASIDownloadCache sharedCache]];
     
     // Ask the download cache for a place to store the cached data
@@ -135,7 +137,6 @@
 - (void)webPageFetchFailed:(ASIHTTPRequest *)theRequest
 {
     NSLog(@"%@",[theRequest error]);
-    
 }
 
 - (void)webPageFetchSucceeded:(ASIHTTPRequest *)theRequest
@@ -154,6 +155,11 @@
 - (IBAction)changeVersion:(id)sender {
 
     [self deleteCache];
+}
+
+- (IBAction)back:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)deleteCache{
@@ -175,4 +181,11 @@
     
     [MBProgressHUD showSuccess:@"更换版本成功" toView:self.view];
 }
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+
+    
+    return YES;
+}
+
 @end
