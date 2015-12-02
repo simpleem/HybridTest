@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  SSTextHtmlCache
+//
+//  Created by simpleem on 15/12/1.
+//  Copyright © 2015年 simpleem. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...) {}
+#endif
+
+#define HHH @"SFSF"
+
+#endif /* PrefixHeader_pch */

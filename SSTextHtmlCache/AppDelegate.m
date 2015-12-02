@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.myCache = [[ASIDownloadCache alloc] init];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    [self.myCache setStoragePath:[documentDirectory stringByAppendingPathComponent:@"resource"]];
+    [self.myCache setDefaultCachePolicy:ASIOnlyLoadIfNotCachedCachePolicy];
+    
     return YES;
 }
 
