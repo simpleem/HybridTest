@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA0D95F1C102B900066B774 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95B1C102B900066B774 /* index.html */; };
+		7DA0D9601C102B900066B774 /* userhead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95D1C102B900066B774 /* userhead.png */; };
+		7DA0D9611C102B900066B774 /* userpwd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95E1C102B900066B774 /* userpwd.png */; };
 		7DE591271C0D2D4100BA1CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE591261C0D2D4100BA1CAF /* main.m */; };
 		7DE5912A1C0D2D4100BA1CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE591291C0D2D4100BA1CAF /* AppDelegate.m */; };
 		7DE5912D1C0D2D4100BA1CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5912C1C0D2D4100BA1CAF /* ViewController.m */; };
@@ -28,13 +31,15 @@
 		7DE627841C0E82D100723443 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627801C0E82D100723443 /* MBProgressHUD+NJ.m */; };
 		7DE627851C0E82D100723443 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DE627811C0E82D100723443 /* MBProgressHUD.bundle */; };
 		7DE627861C0E82D100723443 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627831C0E82D100723443 /* MBProgressHUD.m */; };
+		7DEE6E481C0FD098007DCA5D /* SSCacheWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */; };
 		7DF2CF0B1C0ECBBF004A8978 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */; };
 		7DF2CF0F1C0ED952004A8978 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */; };
-		7DF2CF121C0EF45F004A8978 /* asd.css in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2CF101C0EF45F004A8978 /* asd.css */; };
-		7DF2CF151C0EF46C004A8978 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2CF141C0EF46C004A8978 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DA0D95B1C102B900066B774 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		7DA0D95D1C102B900066B774 /* userhead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userhead.png; sourceTree = "<group>"; };
+		7DA0D95E1C102B900066B774 /* userpwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userpwd.png; sourceTree = "<group>"; };
 		7DE591221C0D2D4100BA1CAF /* SSTextHtmlCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSTextHtmlCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE591261C0D2D4100BA1CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DE591281C0D2D4100BA1CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,12 +82,12 @@
 		7DE627811C0E82D100723443 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		7DE627821C0E82D100723443 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7DE627831C0E82D100723443 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7DEE6E461C0FD098007DCA5D /* SSCacheWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCacheWebView.h; sourceTree = "<group>"; };
+		7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCacheWebView.m; sourceTree = "<group>"; };
 		7DF2CF091C0ECBBF004A8978 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
 		7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		7DF2CF0D1C0ED952004A8978 /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
 		7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
-		7DF2CF101C0EF45F004A8978 /* asd.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = asd.css; sourceTree = "<group>"; };
-		7DF2CF141C0EF46C004A8978 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DA0D95C1C102B900066B774 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				7DA0D95D1C102B900066B774 /* userhead.png */,
+				7DA0D95E1C102B900066B774 /* userpwd.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		7DE591191C0D2D4100BA1CAF = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +147,8 @@
 		7DE591251C0D2D4100BA1CAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7DF2CF141C0EF46C004A8978 /* index.html */,
-				7DF2CF101C0EF45F004A8978 /* asd.css */,
+				7DA0D95B1C102B900066B774 /* index.html */,
+				7DA0D95C1C102B900066B774 /* img */,
 				7DE591261C0D2D4100BA1CAF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -193,6 +207,8 @@
 			children = (
 				7DE591BE1C0D344300BA1CAF /* ASIWebPageRequest.h */,
 				7DE591BF1C0D344300BA1CAF /* ASIWebPageRequest.m */,
+				7DEE6E461C0FD098007DCA5D /* SSCacheWebView.h */,
+				7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */,
 			);
 			path = ASIWebPageRequest;
 			sourceTree = "<group>";
@@ -334,8 +350,9 @@
 				7DE591351C0D2D4100BA1CAF /* LaunchScreen.storyboard in Resources */,
 				7DE627851C0E82D100723443 /* MBProgressHUD.bundle in Resources */,
 				7DE591321C0D2D4100BA1CAF /* Assets.xcassets in Resources */,
-				7DF2CF151C0EF46C004A8978 /* index.html in Resources */,
-				7DF2CF121C0EF45F004A8978 /* asd.css in Resources */,
+				7DA0D95F1C102B900066B774 /* index.html in Resources */,
+				7DA0D9611C102B900066B774 /* userpwd.png in Resources */,
+				7DA0D9601C102B900066B774 /* userhead.png in Resources */,
 				7DE591301C0D2D4100BA1CAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +380,7 @@
 				7DE591991C0D2D9200BA1CAF /* ASINetworkQueue.m in Sources */,
 				7DE591941C0D2D9200BA1CAF /* ASIDataDecompressor.m in Sources */,
 				7DE591BA1C0D2F5100BA1CAF /* Reachability.m in Sources */,
+				7DEE6E481C0FD098007DCA5D /* SSCacheWebView.m in Sources */,
 				7DE591951C0D2D9200BA1CAF /* ASIDownloadCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
