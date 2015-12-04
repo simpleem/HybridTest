@@ -32,7 +32,7 @@
 
 -(NSString *)cachesPath{
     if (!_cachesPath) {
-        _cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
+        _cachesPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
     }
     return _cachesPath;
 }
@@ -71,6 +71,19 @@
 }
 - (void)sendRequestGetJSON {
     
+    NSString *jsonCachePath = [self.cachesPath stringByAppendingPathComponent:@"json.data"];
+    NSDictionary *jsonDic = [NSDictionary dictionaryWithContentsOfFile:jsonCachePath];
+    if (jsonDic) {
+        
+        NSArray *hourArray = [self hourlyWeathFromJSON:jsonDic];
+        NSArray *daliyArray = [self dailyWeathFromJSON:jsonDic];
+        
+        self.hourlyArray = hourArray;
+        self.dailyArray = daliyArray;
+        
+        [self.tableView reloadData];
+        return;
+    }
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://api.worldweatheronline.com/free/v2/weather.ashx?q=shenzhen&num_of_days=5&format=json&tp=6&key=17b1ab83b007db838c5b89a7497da"]];
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -79,6 +92,9 @@
             NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             self.hourlyArray = [self hourlyWeathFromJSON:jsonDic];
             self.dailyArray = [self dailyWeathFromJSON:jsonDic];
+            
+            [jsonDic writeToFile:jsonCachePath atomically:YES];
+            
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 [self.tableView reloadData];
