@@ -10,6 +10,8 @@
 		7DA0D95F1C102B900066B774 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95B1C102B900066B774 /* index.html */; };
 		7DA0D9601C102B900066B774 /* userhead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95D1C102B900066B774 /* userhead.png */; };
 		7DA0D9611C102B900066B774 /* userpwd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA0D95E1C102B900066B774 /* userpwd.png */; };
+		7DE1FCEC1C111986009CA8A0 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE1FCEA1C111986009CA8A0 /* WelcomeViewController.m */; };
+		7DE1FCED1C111986009CA8A0 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DE1FCEB1C111986009CA8A0 /* WelcomeViewController.xib */; };
 		7DE591271C0D2D4100BA1CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE591261C0D2D4100BA1CAF /* main.m */; };
 		7DE5912A1C0D2D4100BA1CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE591291C0D2D4100BA1CAF /* AppDelegate.m */; };
 		7DE5912D1C0D2D4100BA1CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5912C1C0D2D4100BA1CAF /* ViewController.m */; };
@@ -40,6 +42,9 @@
 		7DA0D95B1C102B900066B774 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		7DA0D95D1C102B900066B774 /* userhead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userhead.png; sourceTree = "<group>"; };
 		7DA0D95E1C102B900066B774 /* userpwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userpwd.png; sourceTree = "<group>"; };
+		7DE1FCE91C111986009CA8A0 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		7DE1FCEA1C111986009CA8A0 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		7DE1FCEB1C111986009CA8A0 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		7DE591221C0D2D4100BA1CAF /* SSTextHtmlCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSTextHtmlCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE591261C0D2D4100BA1CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DE591281C0D2D4100BA1CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -285,6 +290,9 @@
 			children = (
 				7DF2CF0D1C0ED952004A8978 /* Demo3ViewController.h */,
 				7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */,
+				7DE1FCE91C111986009CA8A0 /* WelcomeViewController.h */,
+				7DE1FCEA1C111986009CA8A0 /* WelcomeViewController.m */,
+				7DE1FCEB1C111986009CA8A0 /* WelcomeViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 				7DE591321C0D2D4100BA1CAF /* Assets.xcassets in Resources */,
 				7DA0D95F1C102B900066B774 /* index.html in Resources */,
 				7DA0D9611C102B900066B774 /* userpwd.png in Resources */,
+				7DE1FCED1C111986009CA8A0 /* WelcomeViewController.xib in Resources */,
 				7DA0D9601C102B900066B774 /* userhead.png in Resources */,
 				7DE591301C0D2D4100BA1CAF /* Main.storyboard in Resources */,
 			);
@@ -368,6 +377,7 @@
 				7DE5912D1C0D2D4100BA1CAF /* ViewController.m in Sources */,
 				7DE591971C0D2D9200BA1CAF /* ASIHTTPRequest.m in Sources */,
 				7DE591921C0D2D9200BA1CAF /* ASIAuthenticationDialog.m in Sources */,
+				7DE1FCEC1C111986009CA8A0 /* WelcomeViewController.m in Sources */,
 				7DE591C01C0D344300BA1CAF /* ASIWebPageRequest.m in Sources */,
 				7DF2CF0B1C0ECBBF004A8978 /* Demo1ViewController.m in Sources */,
 				7DE591961C0D2D9200BA1CAF /* ASIFormDataRequest.m in Sources */,
