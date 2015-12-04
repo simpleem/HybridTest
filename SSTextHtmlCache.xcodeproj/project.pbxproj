@@ -48,10 +48,9 @@
 		7DE627841C0E82D100723443 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627801C0E82D100723443 /* MBProgressHUD+NJ.m */; };
 		7DE627851C0E82D100723443 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DE627811C0E82D100723443 /* MBProgressHUD.bundle */; };
 		7DE627861C0E82D100723443 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE627831C0E82D100723443 /* MBProgressHUD.m */; };
+		7DEE6E481C0FD098007DCA5D /* SSCacheWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */; };
 		7DF2CF0B1C0ECBBF004A8978 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */; };
 		7DF2CF0F1C0ED952004A8978 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */; };
-		7DF2CF121C0EF45F004A8978 /* asd.css in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2CF101C0EF45F004A8978 /* asd.css */; };
-		7DF2CF151C0EF46C004A8978 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2CF141C0EF46C004A8978 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,12 +134,12 @@
 		7DE627811C0E82D100723443 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		7DE627821C0E82D100723443 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7DE627831C0E82D100723443 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7DEE6E461C0FD098007DCA5D /* SSCacheWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCacheWebView.h; sourceTree = "<group>"; };
+		7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCacheWebView.m; sourceTree = "<group>"; };
 		7DF2CF091C0ECBBF004A8978 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
 		7DF2CF0A1C0ECBBF004A8978 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		7DF2CF0D1C0ED952004A8978 /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
 		7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
-		7DF2CF101C0EF45F004A8978 /* asd.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = asd.css; sourceTree = "<group>"; };
-		7DF2CF141C0EF46C004A8978 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,8 +249,8 @@
 		7DE591251C0D2D4100BA1CAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7DF2CF141C0EF46C004A8978 /* index.html */,
-				7DF2CF101C0EF45F004A8978 /* asd.css */,
+				7DA0D95B1C102B900066B774 /* index.html */,
+				7DA0D95C1C102B900066B774 /* img */,
 				7DE591261C0D2D4100BA1CAF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -311,6 +310,8 @@
 			children = (
 				7DE591BE1C0D344300BA1CAF /* ASIWebPageRequest.h */,
 				7DE591BF1C0D344300BA1CAF /* ASIWebPageRequest.m */,
+				7DEE6E461C0FD098007DCA5D /* SSCacheWebView.h */,
+				7DEE6E471C0FD098007DCA5D /* SSCacheWebView.m */,
 			);
 			path = ASIWebPageRequest;
 			sourceTree = "<group>";
@@ -389,6 +390,9 @@
 			children = (
 				7DF2CF0D1C0ED952004A8978 /* Demo3ViewController.h */,
 				7DF2CF0E1C0ED952004A8978 /* Demo3ViewController.m */,
+				7DE1FCE91C111986009CA8A0 /* WelcomeViewController.h */,
+				7DE1FCEA1C111986009CA8A0 /* WelcomeViewController.m */,
+				7DE1FCEB1C111986009CA8A0 /* WelcomeViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -476,6 +480,7 @@
 				78748CED1C102E3A00E69E0A /* UIImageView+HighlightedWebCache.m in Sources */,
 				7DE591971C0D2D9200BA1CAF /* ASIHTTPRequest.m in Sources */,
 				7DE591921C0D2D9200BA1CAF /* ASIAuthenticationDialog.m in Sources */,
+				7DE1FCEC1C111986009CA8A0 /* WelcomeViewController.m in Sources */,
 				7DE591C01C0D344300BA1CAF /* ASIWebPageRequest.m in Sources */,
 				78748CE71C102E3A00E69E0A /* SDWebImageManager.m in Sources */,
 				78748CE41C102E3A00E69E0A /* SDWebImageDecoder.m in Sources */,
@@ -503,6 +508,7 @@
 				78748CE61C102E3A00E69E0A /* SDWebImageDownloaderOperation.m in Sources */,
 				7DE591941C0D2D9200BA1CAF /* ASIDataDecompressor.m in Sources */,
 				7DE591BA1C0D2F5100BA1CAF /* Reachability.m in Sources */,
+				7DEE6E481C0FD098007DCA5D /* SSCacheWebView.m in Sources */,
 				7DE591951C0D2D9200BA1CAF /* ASIDownloadCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
